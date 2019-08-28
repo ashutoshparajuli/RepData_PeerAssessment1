@@ -367,17 +367,50 @@ summary {
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<hr />
 <p>This is an assignment from week 2 of <a href="https://www.coursera.org/learn/reproducible-research">The Reproducible Research</a> course offered by <a href="https://www.coursera.org">Coursera</a>. This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.</p>
 <p>This work is done on RStudio for Linux. GitKraken for linux is used as a Git Client. This is written in R markdown and using knitr package a markdown and html file is created.</p>
-<hr />
 <p><strong>For Faster Navigation</strong></p>
 <ol style="list-style-type: decimal">
 <li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.Rmd">PA1_template.Rmd</a></p></li>
 <li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md">PA1_template.md</a></p></li>
 <li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/tree/master/PA1_template_files/figure-html">Figures</a></p></li>
 </ol>
-<hr />
+<div id="assignment" class="section level2">
+<h2>Assignment</h2>
+<div id="loading-and-preprocessing-the-data" class="section level3">
+<h3><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#loading-and-preprocessing-the-data">Loading and preprocessing the data</a></h3>
+<div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level4">
+<h4><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#what-is-mean-total-number-of-steps-taken-per-day">What is mean total number of steps taken per day?</a></h4>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#1-creating-a-histogram">Make a histogram of the total number of steps taken each day.</a></p></li>
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#2-mean-and-median-total-number-of-steps-per-day">Calculate and report the mean and median total number of steps taken per day.</a></p></li>
+</ol>
+</div>
+<div id="what-is-the-average-daily-activity-pattern" class="section level4">
+<h4><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#what-is-the-average-daily-activity-pattern">What is the average daily activity pattern?</a></h4>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#1-making-a-time-series-plot-ie-type--l-of-the-5-minute-interval-x-axis-and-the-average-number-of-steps-taken-averaged-across-all-days-y-axis">Make a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).</a></p></li>
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#2-finding-the-maximum-number-of-steps-in-the-time-series-plot">Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?</a></p></li>
+</ol>
+</div>
+<div id="imputing-missing-values" class="section level4">
+<h4><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#imputing-missing-values">Imputing Missing Values</a></h4>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#1-calculating-the-total-number-of-missing-values">Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs).</a></p></li>
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#2-devising-a-strategy-for-filling-in-all-of-the-missing-values-in-the-dataset">Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</a></p></li>
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#3-creating-a-new-dataset-equal-to-original-dataset-without-any-missing-value">Create a new dataset that is equal to the original dataset but with the missing data filled in.</a></p></li>
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#4-new-dataset-creating-a-histogram-find-mean--median--comparing-with-original-dataset">Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?</a></p></li>
+</ol>
+</div>
+<div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level4">
+<h4><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#are-there-differences-in-activity-patterns-between-weekdays-and-weekends">Are there differences in activity patterns between weekdays and weekends?</a></h4>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#1-creating-a-new-factor-variable-in-the-dataset-with-two-levels---weekends-and-weekdays">Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.</a></p></li>
+<li><p><a href="https://github.com/ashutoshparajuli/RepData_PeerAssessment1/blob/master/PA1_template.md#2-creating-a-panel-plot-containing-time-series-plot-of-5-min-interval-x-axis-vs-average-number-of-steps-y-axis-averaged-across-all-week">Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).</a></p></li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 
 
